@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	welcome!!! 반가워요!!<br>
+	<% request.setCharacterEncoding("utf-8");
+//post 방식에서의 한글처리
+//웹브라우저에서 전달된 데이터 받기
+int korean = Integer.parseInt(request.getParameter("korean");
+int english = Integer.parseInt(request.getParameter("english");
+int math = Integer.parseInt(request.getParameter("math");
+
+out.println(korean);
+out.println(english);
+out.println(math);
+int total = korean + english + math;
+out.println("total" :)
+	%>
+</body>
+</html>
