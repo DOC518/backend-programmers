@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="boardPro.jsp" method="post">
+	<h2>게시판 홈</h2>
+	<table>
+		<tr>
+			<td>작성자:</td>
+			<td><input type="text" name="id"></td>
+		</tr>
+		<tr>
+			<td>제목:</td>
+			<td><input type="text" name="id"></td>
+		</tr>
+		<tr>
+			<td>주소지</td>
+			<td>
+					<select name="intro">
+							<option value="서울" selected>서울</option>
+							<option value="경기">경기</option>
+							<option value="인천">인천</option>
+							<option value="기타">기타</option>
+					</select>
+			</td>
+		</tr>
+				<tr>
+			<td>메모</td>
+			<td>
+					<textarea name="내용" rows="4"></textarea>
+			</td>
+		</tr>
+	</table>
+	<input type="submit" value="확인">
+	<input type="submit" value="취소">
+	</form>
+	<%
+		pageContext.setAttribute("Test", "Test");
+	%>
+</body>
+</html>
